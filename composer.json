@@ -1,0 +1,19 @@
+{
+    "require": {
+        "dwaskowski/environment": "dev-master"
+    },
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "dwaskowski/environment",
+                "version": "dev-master",
+                "source": {
+                    "url": "git@github.com:dwaskowski/environment.git",
+                    "type": "git",
+                    "reference": "origin/master"
+                }
+            }
+        }
+    ]
+}

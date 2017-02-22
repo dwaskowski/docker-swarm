@@ -1,0 +1,31 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "1c233e2802571f1f43f3c3bd1c958af2",
+    "packages": [
+        {
+            "name": "dwaskowski/environment",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:dwaskowski/environment.git",
+                "reference": "origin/master"
+            },
+            "type": "library",
+            "time": "2016-11-01 15:16:57"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "dwaskowski/environment": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
