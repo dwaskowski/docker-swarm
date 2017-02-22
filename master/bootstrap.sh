@@ -21,7 +21,7 @@ docker swarm init --advertise-addr 192.168.254.2
 docker swarm join-token worker -q > /swarm/node-token
 token=`cat /swarm/node-token`
 
-docker-machine create --driver generic --swarm --swarm-master --swarm-discovery token://$token --generic-ip-address=192.168.254.2 --generic-ssh-key=/swarm/cluster-key --generic-ssh-user=vagrant master
+docker-machine create --driver generic --swarm --swarm-master --swarm-discovery token://$token --generic-ip-address=192.168.254.2 --generic-ssh-key=/swarm/cluster-key --generic-ssh-user=vagrant default
 
 # Docker Compose
 curl -L https://github.com/docker/compose/releases/download/1.6.2/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
@@ -44,4 +44,4 @@ hostname -F /etc/hostname
 
 chown vagrant: /home/vagrant/.bash_profile
 
-#eval "$(docker-machine env --swarm master)"
+#eval "$(docker-machine env --swarm default)"
